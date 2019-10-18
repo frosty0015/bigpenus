@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css"> 
+		
+		<li><a href="index.html"> <img  id="fa"  src="hot beans logo.png" alt=" " class="img"> </a>
+		<script>
+			function validateForm() {
+			var x = document.forms["myForm"]["fname"].value;
+			if (x == "") {
+			alert("Name must be filled out");
+			return false;}}
+</script>
+	</head>
+	<body>
+		<div id="header">
+			<h2>Application Form</h2>
+			<ul>
+				<li><a href="about us.html">about us</a></li>
+				<li><a href="portfolio.html"> protfolio</a>
+				<li><a href="location.html">Locations</a></li
+			</ul>
+		</div>
+		<div id="cont4">
+			<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+				<p> first Name</p>
+				<input name="fname" type="text">
+				
+				<p> last Name</p>
+				<input name="firstname" type="text">
+				
+				<p> adressline 1 Name</p>
+				<input name="firstname" type="text">
+				
+				<p> adressline 2 Name</p>
+				<input name="firstname" type="text">
+				
+				<p> post code</p>
+				<input name="firstname" type="text">
+				
+				<p> contact information</p>
+				<input name="firstname" type="text">
+				
+				 <p>date of burth</p>
+				<input type="datetime-local" name="date of burth">
+				
+				<p>have you worked in retail befor</p>
+				<select name="gender">
+					<option value=" "> </option>
+					<option value="no">no</option>
+					<option value="yes">yes</option>
+				</select>
+				
+				
+				<p> plz list eny mental or phisical aillments you have</p>
+				<textarea name="list of mental helth problems is they have eny" rows="2" cols="30">
+				</textarea>
+				
+				<p>Male or Female? </p>
+				<select name="gender">
+					<option value="">  </option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+				
+				<p> Why Choose you? </p>
+				<textarea name="message" rows="5" cols="30">
+				</textarea>
+				
+				<p> why do you want to work for us </p>
+				<textarea name="message" rows="5" cols="30">
+				</textarea>
+				<br>
+				<br>
+				<input type="submit" value="submit">
+			</form>
+		</div>
+	</body>
+</html>
+
+
